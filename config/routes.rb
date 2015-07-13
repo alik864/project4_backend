@@ -8,5 +8,7 @@ resources :users, except: [:new, :edit] do
 
   end
 
+  resources :reviews, except: [:new, :edit] do
+
 end
 
