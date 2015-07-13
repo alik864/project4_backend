@@ -1,3 +1,12 @@
 Rails.application.routes.draw do
-  get "profile" => "profile#index"
+
+resources :users, except: [:new, :edit] do
+
+  end
+
+  resources :profiles, except: [:new, :edit] do
+
+  end
+
 end
+
