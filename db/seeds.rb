@@ -10,7 +10,27 @@ Profile.delete_all
 
 User.delete_all
 
-u1= User.create!(email: "alikarukas@gmail.com", password: 'ak', role: "admin")
-p1 = Profile.create!(name: "Ali", technologies: "HTML, Ruby" )
+u1= User.create!(email: "sarahbeckner@gmail.com", password: 'nk', role: "Mentor")
+p1 = Profile.create!(name: "Sarah Beckner", technologies: "Python, Rails", summary: "I am the VP of Web Development at Apple with over 20 years experience writing code", availability:"No")
+u1.profile = p1
+u1.save!
+
+u1= User.create!(email: "sammybob@gmail.com", password: 'tk', role: "Mentor")
+p1 = Profile.create!(name: "Sammy Lillian", technologies: "Python, Rails", summary: "I am the VP of Web Development at Apple with over 20 years experience", availability:"No")
+u1.profile = p1
+u1.save!
+
+u1= User.create!(email: "jillianjohnson@gmail.com", password: 'pj', role: "Mentee")
+p1 = Profile.create!(name: "Elise Lauren", technologies: "CSS", summary: "I am looking for a mentor that can teach me Java and I can help someone with CSS if anyone is in need of some training", availability: "Yes")
+u1.profile = p1
+u1.save!
+
+u1= User.create!(email: "norajones@gmail.com", password: 'qj', role: "Admin")
+p1 = Profile.create!(name: "Nora Shantee", technologies: "MongoDB, SQL, PHP, jQuery", summary: "I work for Code it Forward and I have some experience web development experience", availability: "No")
+u1.profile = p1
+u1.save!
+
+u1= User.create!(email: "tanyahuntington@gmail.com", password: 'wj', role: "Mentor")
+p1 = Profile.create!(name: "Erica Martins", technologies: "Javascript", summary: "I am an expert on Javascript", availability: "Yes")
 u1.profile = p1
 u1.save!
