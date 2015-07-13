@@ -10,5 +10,5 @@ resources :users, except: [:new, :edit] do
 
   resources :reviews, except: [:new, :edit] do
 
+  end
 end
-
