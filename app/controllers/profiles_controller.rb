@@ -9,7 +9,8 @@ class ProfilesController < ApplicationController
     @profile = Profile.find(params[:id])
     render json: @profile
   end
-
-
-
 end
+
+
+
+
